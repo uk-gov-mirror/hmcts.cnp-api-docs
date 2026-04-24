@@ -30,14 +30,22 @@ workspace {
         }
 
         container lau "lau-overview" {
-            include *
+            #include *
             # exclude caseworker
             # exclude citizen
             # include xui
-            exclude idam
-            exclude rpe
-            exclude relationship==bsp->*
+            include lau_frontend
+            include lau_case_backend
+            include lau_idam_backend
+            include lau_eud_backend
+            include ccd
+            include idam
+            include rd
             autoLayout
+            #exclude idam
+            #exclude rpe
+            #exclude relationship==bsp->*
+            #autoLayout
         }
 
         # container lau "lau-citizen" {
