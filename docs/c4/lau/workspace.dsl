@@ -45,7 +45,6 @@ workspace {
             #exclude idam
             #exclude rpe
             #exclude relationship==bsp->*
-            #autoLayout
         }
 
         # container lau "lau-citizen" {
